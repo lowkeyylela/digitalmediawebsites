@@ -2,12 +2,55 @@
 <html lang="en">
 
 <head>
+    <style>
+div {
+    width: 200px;
+    height: 200px;
+    background: black;
+    margin:50px;
+}
+#static {
+    background:orange;
+    position:static;/*default*/
+   }
+#sticky {
+    background:pink;
+    position:sticky;
+
+}
+#relative {
+    background:yellow;
+    position:relative;
+    left: 100px;
+    top: -100px;
+    z-index: -5;
+
+}
+#fixed{
+    background:greenyellow;
+    position: fixed;
+    top:0;
+    right:0;
+}
+ #absolute{
+background: purple;
+position:absolute;
+left: 300px;
+bottom: -300px;
+}
+    </style>
    
         
-    </style>
+   
 </head>
 
 <body>
+    <div id="static"></div>
+    <div id="sticky"></div>
+    <div id="relative"></div>
+    <div id="fixed"></div>
+    <div id="absolute"></div>
+    
   
 </body>
 
